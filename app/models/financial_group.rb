@@ -1,7 +1,7 @@
 class FinancialGroup < ApplicationRecord
-  belongs_to :author, class_name: 'User'
-  has_many :financial_entities
-
-  validates :name, presence: true
-  validates :icon, presence: true
+  belongs_to :user
+  has_many :categorisations, dependent: :destroy
+  has_many :financial_entities,through: :categorisations
+  has_one_attached :icon
+  validates :name,  presence: true
 end
