@@ -1,9 +1,8 @@
-<p>Cash Flow Nexus</p>
+<div class='logo-container'>
+<%= image_tag 'logoCFN.png'%>
+<div>
 
-<% if user_signed_in?%>
-  <%= button_to 'Logout', destroy_user_session_path, method: :delete %>
-
-<%else%>
-  <h1><%= @currentUser%> welcome Guest..</h1>
-<%= link_to 'Sign in', new_user_session_path %>
-<%end%>
+<div class='sign-links flexer'>
+<%= link_to 'LOG IN', new_user_session_path,class:'sign-up a-tag'%>
+<%= link_to 'SIGN UP', new_user_registration_path,class:'sign-up a-tag' %>
+</div>
