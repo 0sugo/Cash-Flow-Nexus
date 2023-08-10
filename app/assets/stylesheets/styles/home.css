@@ -1,7 +1,7 @@
-.sign-links{
+.sign-links {
   flex-direction: column;
-  position:fixed;
-  bottom:0;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   align-items: center;
 }
@@ -10,7 +10,7 @@
   width: 80%;
   text-align: center;
   padding: 4%;
-  margin: 10px 0px;
+  margin: 10px 0;
   font-size: 18px;
   font-weight: 500;
   color: #434b54;
@@ -18,8 +18,9 @@
 
 .sign-up:active {
   background-color: #3778c2;
-  color: #FFF;
+  color: #fff;
 }
+
 .logo-container {
   text-align: center;
   margin-top: 50%;

@@ -22,18 +22,17 @@
   border-color: #5fb523;
 }
 
-.overall-container{
+.overall-container {
   background-color: #f3f3f3;
-  height:100vh;
+  height: 100vh;
 }
 
 .category-card {
   background-color: #fff;
   border-radius: 8px;
-  margin-bottom: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 80%;
-  margin: 2% auto;
+  margin: 2% auto 15px auto;
   padding: 20px;
 }
 
@@ -50,7 +49,7 @@
 .category-details {
   align-items: center;
   justify-content: space-between;
-  width:100%;
+  width: 100%;
 }
 
 .category-name {
@@ -64,9 +63,10 @@
 
 .wrapper {
   margin-bottom: 3%;
-  padding:3%;
-  border:1px solid red;
+  padding: 3%;
+  border: 1px solid red;
 }
+
 .blacker {
-  color:#434b54;
+  color: #434b54;
 }

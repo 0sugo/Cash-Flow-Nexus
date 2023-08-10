@@ -16,47 +16,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Flex:wght@300;400;500;600;700&family=Roboto+Serif:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 @import 'font-awesome';
 
- *,
- *::before,
- *::after {
-   margin: 0;
-   padding: 0;
-   letter-spacing: 0.03em;
-   overflow-x: hidden;
-   font-family: 'Montserrat', sans-serif;
- }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.03em;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
 
-.a-tag{
+.a-tag {
   text-decoration: none;
 }
 
 .back-arrow {
   width: 35px;
   height: 35px;
-  fill: #FFF;
-  color:#FFF;
+  fill: #fff;
+  color: #fff;
 }
 
-nav{
-  background:#3778c2;
+nav {
+  background: #3778c2;
   justify-content: space-between;
   align-items: center;
-  padding:10px;
+  padding: 10px;
   margin-bottom: 3%;
 }
 
 .banner {
-  color:#FFF;
+  color: #fff;
 }
 
 .flexer {
-  display:flex
+  display: flex;
 }
 
 .login-btn {
   border: none;
   background: none;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
 }
 
@@ -90,4 +90,3 @@ form {
   color: #434b54;
   margin-top: 10%;
 }
-
