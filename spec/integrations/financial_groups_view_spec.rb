@@ -6,7 +6,7 @@ RSpec.feature 'Financial Groups', type: :feature do
                          email: Faker::Internet.email,
                          password: '1234567', password_confirmation: '1234567')
 
-    @financialGroup = FinancialGroup.create(name: 'house',icon:nil, user_id: @user.id)
+    @financial_group = FinancialGroup.create(name: 'house', icon: nil, user_id: @user.id)
     login_as(@user, scope: :user)
   end
 
@@ -26,18 +26,4 @@ RSpec.feature 'Financial Groups', type: :feature do
     expect(page).to have_content('New Category')
     expect(page).to have_css('.category-card', count: 1, text: 'New Category')
   end
-
-  # scenario 'User can navigate to financial entities page from category card' do
-  #   new_group = FinancialGroup.create(name: 'New Group', user: @user)
-
-  #   visit financial_groups_path
-
-  #   within('.category-card') do
-  #     click_link @new_group.name
-  #   end
-
-  #   expect(page).to have_content(@newFinancialGroup.name)
-  # end
-
-
 end

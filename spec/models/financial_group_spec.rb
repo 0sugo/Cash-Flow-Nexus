@@ -38,7 +38,5 @@ RSpec.describe FinancialGroup, type: :model do
     #   expect(financial_group).to be_valid
     #   expect(financial_group.errors[:icon]).to include("can't be blank")
     # end
-
-end
-
+  end
 end

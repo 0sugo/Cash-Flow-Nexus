@@ -2,30 +2,29 @@ class FinancialGroupsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @currentUser = current_user.name
+    @currentuser = current_user.name
     @allgroups = current_user.financial_groups
-    @totalAmounts = {}
+    @total_amounts = {}
 
     @allgroups.each do |group|
-      @totalAmounts[group] = group.financial_entities.sum(:amount)
+      @total_amounts[group] = group.financial_entities.sum(:amount)
     end
   end
-  
+
   def new
-    @newFinancialGroup = FinancialGroup.new
+    @new_financial_group = FinancialGroup.new
   end
 
   def create
-    @newFinancialGroup = FinancialGroup.new(financial_group_params)
-    @newFinancialGroup.user = current_user
+    @new_financial_group = FinancialGroup.new(financial_group_params)
+    @new_financial_group.user = current_user
 
-    if @newFinancialGroup.save
-      redirect_to financial_groups_path,notice: 'Financial Group created succesfully.'
+    if @new_financial_group.save
+      redirect_to financial_groups_path, notice: 'Financial Group created succesfully.'
     else
-      render:new
+      render :new
     end
   end
-
 
   private
 
