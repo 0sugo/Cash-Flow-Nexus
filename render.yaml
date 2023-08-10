@@ -1,5 +1,4 @@
 databases:
-  - type: postgres
     name: cash_flow_nexus_db
     databaseName: cash_flow_nexus
     user: cash_flow_nexus_user
