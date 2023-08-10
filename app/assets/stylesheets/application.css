@@ -13,3 +13,81 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Flex:wght@300;400;500;600;700&family=Roboto+Serif:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import 'font-awesome';
+
+ *,
+ *::before,
+ *::after {
+   margin: 0;
+   padding: 0;
+   letter-spacing: 0.03em;
+   overflow-x: hidden;
+   font-family: 'Montserrat', sans-serif;
+ }
+
+.a-tag{
+  text-decoration: none;
+}
+
+.back-arrow {
+  width: 35px;
+  height: 35px;
+  fill: #FFF;
+  color:#FFF;
+}
+
+nav{
+  background:#3778c2;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
+  margin-bottom: 3%;
+}
+
+.banner {
+  color:#FFF;
+}
+
+.flexer {
+  display:flex
+}
+
+.login-btn {
+  border: none;
+  background: none;
+  color: #FFF;
+  font-size: 16px;
+}
+
+form {
+  flex-direction: column;
+  width: 100%;
+}
+
+.field {
+  margin-bottom: 4px;
+}
+
+.field input[type="email"],
+.field input[type="text"],
+.field input[type="number"],
+.field input[type="password"] {
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.field input[type="email"]::placeholder,
+.field input[type="text"]::placeholder,
+.field input[type="number"]::placeholder,
+.field input[type="password"]::placeholder {
+  color: #ccc;
+}
+
+.center {
+  text-align: center;
+  color: #434b54;
+  margin-top: 10%;
+}
+
