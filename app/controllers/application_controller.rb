@@ -9,4 +9,9 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: attributes)
     devise_parameter_sanitizer.permit(:account_update, keys: attributes)
   end
+
+  def after_sign_in_path_for(resource)
+    # Redirect to financial_groups#index after signing in
+    financial_groups_path
+  end
 end
