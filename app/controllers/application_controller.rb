@@ -12,7 +12,6 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(_resource)
-    # Redirect to financial_groups#index after signing in
     financial_groups_path
   end
 end

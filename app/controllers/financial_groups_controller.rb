@@ -3,7 +3,7 @@ class FinancialGroupsController < ApplicationController
 
   def index
     @currentuser = current_user.name
-    @allgroups = current_user.financial_groups
+    @allgroups = current_user.financial_groups.includes(:financial_entities)
     @total_amounts = {}
 
     @allgroups.each do |group|
