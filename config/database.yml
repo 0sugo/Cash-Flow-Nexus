@@ -83,7 +83,4 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
-  database: cash_flow_nexus_production
-  username: cash_flow_nexus
-  password: <%= ENV["CASH_FLOW_NEXUS_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
