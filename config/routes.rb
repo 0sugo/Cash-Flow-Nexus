@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "home#index"
 
-  resources :financial_groups do
-  resources :financial_entities
+  resources :financial_groups, only: [:index, :new, :create] do
+  resources :financial_entities, only: [:index, :new, :create]
   end
 end
