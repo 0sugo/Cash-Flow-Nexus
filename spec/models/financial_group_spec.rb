@@ -33,10 +33,11 @@ RSpec.describe FinancialGroup, type: :model do
       expect(financial_group.errors[:name]).to include("can't be blank")
     end
 
-    # it 'is invalid without an icon' do
-    #   financial_group = FinancialGroup.new(name: 'Sample Group')
-    #   expect(financial_group).to be_valid
-    #   expect(financial_group.errors[:icon]).to include("can't be blank")
-    # end
+    context 'validations' do
+      it 'is not valid without an icon' do
+        financial_group = FinancialGroup.new(name: 'Sample Group')
+        expect(financial_group).to_not be_valid
+      end
+    end
   end
 end

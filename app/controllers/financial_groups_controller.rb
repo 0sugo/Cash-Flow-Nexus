@@ -20,6 +20,7 @@ class FinancialGroupsController < ApplicationController
     @new_financial_group.user = current_user
 
     if @new_financial_group.save
+      @new_financial_group.icon.attach(params[:financial_group][:icon]) if params[:financial_group][:icon].present?
       redirect_to financial_groups_path, notice: 'Financial Group created succesfully.'
     else
       render :new
