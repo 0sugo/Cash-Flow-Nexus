@@ -1,0 +1,11 @@
+<%if @all_entities.empty?%>
+<p>No transactions yet</p>
+<%else%>
+<% @all_entities.each do |ent| %>
+  <div class="category-card">
+    <p><strong>Name:</strong> <%= ent.name %></p>
+    <p><strong>Amount:</strong> <%= ent.amount %> $</p>
+  </div>
+<% end %>
+<% end %>
+

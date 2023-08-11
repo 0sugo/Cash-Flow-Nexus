@@ -1,0 +1,23 @@
+<div class='overall-container'>
+<% if @allgroups.empty? %>
+  <p>Lets add your first categories</p>
+<% else %>
+  <% @allgroups.each do |grp| %>
+    <div class="category-card">
+      <%= link_to financial_group_financial_entities_path(grp),class:'a-tag blacker' do %>
+        <div class="category-content flexer">
+          <% if grp.icon.present? %>
+            <%= image_tag grp.icon, alt: grp.name, class: 'category-icon' %>
+          <% else %>
+            <%= image_tag 'placeholder-icon.png', alt: 'Placeholder Icon', class: 'category-icon' %>
+          <% end %>
+          <div class="category-details flexer">
+            <h4 class="category-name"><%= grp.name %></h4>
+            <p class="category-amount">$<%= @total_amounts[grp] %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+<% end %>
+</div>

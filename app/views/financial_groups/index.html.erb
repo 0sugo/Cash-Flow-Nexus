@@ -1,0 +1,17 @@
+<nav class='flexer'>
+<div></div>
+      <h2 class='banner'>Categories</h2>
+      <div>
+<%= button_to 'Logout', destroy_user_session_path, method: :delete,class: 'login-btn' %>
+      </div>
+</nav>
+
+<div class='hero'>
+<p>Hi <%= @currentuser %>,Here are your categories!</p>
+</div>
+
+<%= render 'group_list' %>
+
+<div class='bottom-button sign-links'>
+  <%= link_to 'ADD NEW CATEGORY', new_financial_group_path, class: 'new-cart a-tag' %>
+</div>

@@ -1,0 +1,24 @@
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+<nav class='flexer'>
+      <a href='<%= root_path %>' class='nav-link'>
+        <svg xmlns="http://www.w3.org/2000/svg" class='back-arrow' fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+        </svg>
+      </a>
+      <h2 class='banner'>Forgot Password</h2>
+
+      <div class="actions">
+        <%= f.submit "Send", class: 'login-btn' %>
+      </div>
+    </nav>
+
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder:'Email' %>
+  </div>
+
+<% end %>
+<div class="center">
+<%= render "devise/shared/links" %>
+</div>
