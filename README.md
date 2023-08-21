@@ -1,6 +1,5 @@
 # Cash Flow Nexus
 # Cash Flow Nexus
-# Cash Flow Nexus
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
